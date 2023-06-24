@@ -1,39 +1,21 @@
-
-<app-header titulo="KAISER CRESPIN CHAVEZ" > </app-header>
-<ion-content class="ion-padding">
-    
-        <ion-list>
-            <ion-list-header>
-                <ion-label> Input normal </ion-label>
-            </ion-list-header>
-        
-        
-         <ion-item>
-             <ion-label>Nombre:</ion-label>
-             <ion-input type="text" placeholder="Awesome Input" [(ngModel)]="nombre"> </ion-input>
-         </ion-item>
-        </ion-list>
-
-        <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
-            <ion-list-header>
-                <ion-label>Formulario valido: {{formulario.valid}}</ion-label>
-            </ion-list-header>
-
-            <ion-item>
-                <ion-label>email:</ion-label>
-                <ion-input type="email" placeholder="email" name="email" [(ngModel)]="usuario.email" 
-                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <ion-label>Password:</ion-label>
-             <ion-input type="password" name="password" [(ngModel)]="usuario.password" required placeholder="Contraseña">
-             </ion-input>
-            </ion-item>
-
-            <ion-button [disabled]="formulario.invalid" type="submit" expand="block">
-                Login
-            </ion-button>
-
-        </form>
-</ion-content>
+<ion-list>
+    <ion-item>
+      <ion-input label="Default input"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Input with placeholder" placeholder="Enter company name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Input with value" value="121 S Pinckney St #300"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Readonly input" value="Madison" [readonly]="true"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Disabled input" value="53703" [disabled]="true"></ion-input>
+    </ion-item>
+  </ion-list>

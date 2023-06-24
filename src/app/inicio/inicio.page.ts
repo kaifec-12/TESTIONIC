@@ -15,12 +15,12 @@ interface Componente {
 export class InicioPage implements OnInit {
   componentes: Componente[]=[
     {
-      icon: 'alert-circle-outline',
+      icon: 'newspaper-sharp',
       name: 'Alert',
       redirectTo: '/alert'
       },
       {
-      icon: 'hammer-outline',
+      icon: 'person-sharp',
       name: 'Input Forms',
       redirectTo: '/input-forms'
       

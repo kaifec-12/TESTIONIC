@@ -23,20 +23,20 @@ export class AlertPage implements OnInit {
       header:'Prompt!',
       inputs:[
         {
-          name:'Nombre',
+          name:'NOMBRE',
           type:'text',
-          placeholder: 'Nombres',
+          placeholder: 'NOMBRES',
         },
         {
-          name:'Apellido',
+          name:'APELLIDO',
           type:'text',
-          placeholder: 'Apellidos',
+          placeholder: 'APELLIDOS',
 
         },
         {
-          name:'Descripcion',
+          name:'DESCRIPCIÓN',
           type:'textarea',
-          placeholder: 'Descripcion Materia',
+          placeholder: 'DESCRIPCIÓN DE LA MATERIA',
 
         },
         {
@@ -52,26 +52,26 @@ export class AlertPage implements OnInit {
         },
        
         {
-          name:'Clave',
+          name:'CLAVE',
           type:'password',
-          placeholder: 'Clave',
+          placeholder: 'CLAVE',
           cssClass:'specialClass',
           attributes:{
-            maxlength:4,
+            maxlength:5,
             inputmode:'decimal',
           }
 
         },
         {
-          name:'Nickname',
+          name:'NICKNAME',
           type:'text',
-          placeholder: 'Nickname (max 8 characters)',
+          placeholder: 'NICKNAME (MAX 8 CHARACTERS)',
 
         },
         {
-          name:'Edad',
+          name:'EDAD',
           type:'number',
-          placeholder: 'Edad',
+          placeholder: 'EDAD',
 
         },
       ],
